@@ -5,7 +5,7 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://stpm-ict-2020.netlify.app/index.html</loc>
+  <loc>https://stpm-ict-2020.netlify.app/</loc>
 </url>
 <url>
   <loc>https://stpm-ict-2020.netlify.app/sem1-ict</loc>
@@ -17,6 +17,6 @@
   <loc>https://stpm-ict-2020.netlify.app/sem3-ict</loc>
 </url>
 <url>
-  <loc>https://stpm-ict-2020.netlify.app/about.html</loc>
+  <loc>https://stpm-ict-2020.netlify.app/about</loc>
 </url>
 </urlset>
