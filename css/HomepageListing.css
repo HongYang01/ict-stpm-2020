@@ -1,0 +1,36 @@
+ol.list-at-main-page {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+ol.list-at-main-page a {
+  color: #201459;
+  transition: 1s;
+  white-space: nowrap;
+
+}
+
+ol.list-at-main-page ul {
+  list-style: none;
+  padding-left: .8em;
+  transition: 1s;
+  white-space: nowrap;
+}
+
+ol.list-at-main-page li {
+  color: #201459;
+  transition: 1s;
+  cursor: pointer;
+  white-space: nowrap;
+  width: 0;
+}
+
+/*Hover Effect*/
+
+ol.list-at-main-page li:hover {
+  transform: scale(1.1);
+  transform-origin: left;
+  transition: 0.5s;
+  color: #201459;
+  cursor: pointer;
+}

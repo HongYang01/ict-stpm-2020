@@ -1,0 +1,146 @@
+/*Collapsible*/
+
+label {
+  display: block;
+  max-width: 10px;
+  white-space: nowrap;
+  transition: 1s;
+  font-size: 20px;
+}
+
+label:hover {
+  transform: scale(1.1);
+  color: #201459;
+  transition: .5s;
+  cursor: pointer;
+}
+
+label:active {
+  opacity: .5;
+}
+
+label:focus {
+  transition: .2s;
+  opacity: .5;
+}
+
+input {
+  display: none;
+}
+
+/*================== First Gen ===================*/
+
+.collapsible-text-first-gen {
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: 1s;
+  max-height: 1px;
+  overflow: hidden;
+  margin: 1.1em 0 0 0;
+}
+
+.collapsible-first-gen input:checked~.collapsible-text-first-gen {
+  transition: 2s;
+  opacity: 1;
+  max-height: 280px;
+  padding-bottom: 25px;
+  background: inherit;
+  white-space: normal;
+}
+
+
+
+
+
+/*================== Second Gen ===================*/
+
+
+.collapsible-text-second-gen {
+  position: relative;
+  top: -100%;
+  opacity: .5;
+  transition: 1s;
+  max-height: 1px;
+  overflow: hidden;
+  margin: 1.1em 0 0 0;
+}
+
+.collapsible-second-gen input:checked~.collapsible-text-second-gen {
+  transition: 2s;
+  opacity: 1;
+  max-height: 320px;
+  padding-bottom: 25px;
+  background: inherit;
+  white-space: normal;
+}
+
+
+
+
+
+/*================== Third Gen ===================*/
+
+.collapsible-text-third-gen {
+  position: relative;
+  top: -100%;
+  opacity: .5;
+  transition: 1s;
+  max-height: 1px;
+  overflow: hidden;
+  margin: 1.1em 0 0 0;
+}
+
+.collapsible-third-gen input:checked~.collapsible-text-third-gen {
+  transition: 2s;
+  opacity: 1;
+  max-height: 320px;
+  padding-bottom: 25px;
+  white-space: normal;
+}
+
+
+
+
+/*================== Fourth Gen ===================*/
+
+.collapsible-text-fourth-gen {
+  position: relative;
+  top: -100%;
+  opacity: .5;
+  transition: 1s;
+  max-height: 1px;
+  overflow: hidden;
+  margin: 1.1em 0 0 0;
+}
+
+.collapsible-fourth-gen input:checked~.collapsible-text-fourth-gen {
+  transition: 2s;
+  opacity: 1;
+  max-height: 360px;
+  padding-bottom: 25px;
+  background: inherit;
+}
+
+
+
+
+
+/*================== Fifth Gen ===================*/
+
+.collapsible-text-fifth-gen {
+  position: relative;
+  top: -100%;
+  opacity: .5;
+  transition: 1s;
+  max-height: 1px;
+  overflow: hidden;
+  margin: 1.1em 0 0 0;
+}
+
+.collapsible-fifth-gen input:checked~.collapsible-text-fifth-gen {
+  transition: 2s;
+  opacity: 1;
+  max-height: 230px;
+  padding-bottom: 25px;
+}

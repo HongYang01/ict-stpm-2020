@@ -1,0 +1,84 @@
+@media only screen and (max-width: 1100px) {
+  div.container {
+    min-width: 0px;
+    margin: 0 5%;
+  }
+
+  .main-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul.header {
+    display: flex;
+    list-style: none;
+    white-space: nowrap;
+    width: 80%;
+    margin: 0.5em auto;
+    justify-content: space-between;
+    padding-right: 30px;
+  }
+
+  ul.header a {
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 0.6em;
+    transition: 1s;
+  }
+
+  ul.header a:hover {
+    transition: 0.5s;
+    background-color: #6e60af;
+    color: #f4eccd;
+    border-radius: 0.6em;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  table {
+    min-width: 100%;
+    margin: 5px auto 20px auto;
+  }
+
+  a.moreinfo {
+    position: relative;
+    width: 0;
+    left: 85%;
+    white-space: nowrap;
+  }
+
+  button.gotop {
+    z-index: 1;
+    position: fixed;
+    display: relative;
+    background-color: #6e60af;
+    color: #f4eccd;
+    font-weight: bolder;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: none;
+    right: -5%;
+    bottom: 5%;
+    padding-top: 1em;
+    opacity: 0.4;
+    transition: 1s;
+    transform: rotate(90deg);
+  }
+
+  button.gotop:hover {
+    display: fixed;
+    transition: 0.5s;
+    transform: scale(1);
+    opacity: 1;
+    width: 5em;
+    height: 5em;
+    right: 0;
+    border-radius: 50%;
+    color: #f4eccd;
+    backgroud-color: #6e60af;
+  }
+}

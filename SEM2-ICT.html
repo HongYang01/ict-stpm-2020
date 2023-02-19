@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-min.css" />
+    <link rel="stylesheet" type="text/css" href="css/sem2-style.css" />
+    <link rel="stylesheet" type="text/css" href="css/sem2-collapsible.css" />
+    <link rel="stylesheet" type="text/css" href="css/HomepageListing.css" />
+    <link rel="stylesheet" type="text/css" href="css/progress-bar.css" />
+    <script type="text/javascript" src="js/progress-bar.js" defer></script>
+    <script
+      src="https://www.jdoodle.com/assets/jdoodle-pym.min.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <title>Form 6 - ICT SEM 2</title>
+  </head>
+
+  <body oncontextmenu="return false">
+    <!--================================-->
+    <!--|                              |-->
+    <!--|         Progress Bar         |-->
+    <!--|                              |-->
+    <!--================================-->
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <!--====  End of Progress Bar  ====-->
+
+    <div class="container full-height-grow">
+      <!--==========================-->
+      <!--|                        |-->
+      <!--|         Header         |-->
+      <!--|                        |-->
+      <!--==========================-->
+
+      <header class="main-header">
+        <div class="text-in-header" id="define-computer-program">STPM ICT CheatSheet</div>
+        <ul class="header">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="SEM1-ICT.html">SEM 1</a></li>
+          <li>
+            <a href="SEM2-ICT.html" style="opacity: 0.5; pointer-events: none">SEM 2</a>
+          </li>
+          <li><a href="SEM3-ICT.html">SEM 3</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+        </ul>
+      </header>
+
+      <!--====  End of Header  ====-->
+
+      <h1 style="color: #201459">Semester 2</h1>
+
+      <!--==================================-->
+      <!--|                                |-->
+      <!--|         Select Content         |-->
+      <!--|                                |-->
+      <!--==================================-->
+
+      <fieldset class="select-content">
+        <details>
+          <summary>Select Content</summary>
+          <ol class="list-at-main-page">
+            <li><a href="#c-program-1">Introduction to Programing</a></li>
+            <li>
+              <a href="#c-program-2">Fundamentals of C Programming Language</a>
+            </li>
+            <ul>
+              <li><a href="#c-program-3">2.1 C Program</a></li>
+              <li><a href="#c-program-4">2.2 Basic data types</a></li>
+              <li><a href="#c-program-5">2.3 Expressions</a></li>
+              <li><a href="#c-program-6">2.4 Operators</a></li>
+              <li><a href="#c-program-7">2.5 Input and Output</a></li>
+            </ul>
+            <li><a href="#c-program-8">Problem Solving in Programing</a></li>
+            <li><a href="#c-program-9">Control Structures</a></li>
+            <li><a href="#c-program-10">Function</a></li>
+            <ul>
+              <li><a href="#c-program-10">5.1 Types of function</a></li>
+              <li><a href="#c-program-10">5.2 Function statements</a></li>
+            </ul>
+            <li><a href="#c-program-11">Data Structures</a></li>
+            <ul>
+              <li><a href="#c-program-12">6.1 Arrays</a></li>
+              <li><a href="#c-program-13">6.2 Structures</a></li>
+            </ul>
+          </ol>
+        </details>
+      </fieldset>
+
+      <a
+        href="https://www.programiz.com/c-programming"
+        target="_blank"
+        style="margin: 0 0 20px 0; width: 2px; font-size: 22px; left: 0"
+        ><span style="color: orangered">&#9733;&#9733;&#9733;</span> Master C-Program HERE</a
+      >
+
+      <a
+        href="https://cplayground.com/"
+        target="_blank"
+        style="margin: 0 0 20px 0; width: 10px; font-size: 22px; left: 0"
+        ><span style="color: orangered">&#9733;&#9733;&#9733;</span> C Playground</a
+      >
+
+      <!--====  End of Select Content  ====-->
+
+      <div style="flex-grow: 1">
+        <!--=========================================-->
+        <!--|                                       |-->
+        <!--|         Intro to Programming          |-->
+        <!--|                                       |-->
+        <!--=========================================-->
+
+        <hr class="hr-2" id="c-program-1" />
+        <h2>1. Introduction to Programing</h2>
+        <hr class="hr-2" />
+
+        <!-- Define Computer Program -->
+        <fieldset style="padding-bottom: 30px">
+          <legend>Define Computer Program</legend>
+          <div class="field-container">
+            <ul>
+              <li>
+                A computer program is a series of instructions that directs a computer to perform
+                tasks
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+
+        <!-- Generation of Programming Language -->
+        <fieldset>
+          <legend>Generation of Programming Language</legend>
+
+          <div class="field-container">
+            <picture>
+              <source srcset="assets/gen-of-programming-lang.png 2x" media="(max-width: 1100px)" />
+              <img src="assets/gen-of-programming-lang.png" alt="" style="width: 80%" />
+            </picture>
+            <hr />
+            <h3>Generation of Programming Language</h3>
+            <table class="listing gen-programming-lang">
+              <tr>
+                <td>1. Low-level</td>
+                <td>
+                  <ul class="dashed">
+                    <li>
+                      is a programming language that provides
+                      <b>little or no abstraction</b> from a computer's microprocessor.
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>2. High-level</td>
+                <td>
+                  <ul class="dashed">
+                    <li>
+                      is a programming language that is
+                      <b>more abstract, easier to use and more portable</b>
+                      across platforms.
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+            <hr />
+
+            <h3>Type of Language Translator</h3>
+            <table class="listing language-translator">
+              <tr>
+                <td>1. Assembler</td>
+                <td>
+                  <ul class="dashed">
+                    <li>
+                      convert <b>assembly language</b> into
+                      <b>machine language</b>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>2. Interpreter</td>
+                <td>
+                  <ul class="dashed">
+                    <li>
+                      <b>interpret</b>, <b>convert</b> to machine language & execute
+                      <b>line by line</b>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>2. Compiler</td>
+                <td>
+                  <ul class="dashed">
+                    <li>convert <b>entire</b> source code into machine language & execute</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+            <div class="moreinfo-container">
+              <a
+                href="https://www.includehelp.com/basics/generations-of-programming-language.aspx#:~:text=First%20generation%20languages%20(1GL),Fifth%20generation%20languages%20(5GL)"
+                target="_blank"
+                >Generations of Programming Language</a
+              >
+              <a href="https://www.bbc.co.uk/bitesize/guides/z6x26yc/revision/5" target="_blank"
+                >Translators</a
+              >
+            </div>
+            <hr />
+
+            <h3>How it Works</h3>
+            <div style="display: block; overflow: hidden; white-space: nowrap">
+              <div style="display: flex; align-items: center">
+                <span>Assembly Language &rarr;&nbsp;</span>
+                <div style="border: 3px solid #5c4bac; border-radius: 5px; align-content: center">
+                  <span style="margin: 10px 20px">Assembler</span>
+                </div>
+                <span>&nbsp;&rarr; Machine Language</span>
+              </div>
+
+              <div style="display: flex; align-items: center; margin-top: 20px">
+                <span>3GL &rarr;&nbsp;</span>
+                <div style="border: 3px solid #5c4bac; border-radius: 5px; align-content: center">
+                  <span style="margin: 10px 20px">Compiler / Interpreter</span>
+                </div>
+                <span>&nbsp;&rarr; Machine Language</span>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <!--====  End of Intro to Programming   ====-->
+
+        <!--==========================================================-->
+        <!--|                                                        |-->
+        <!--|         Fundamentals of C PRogramming Language         |-->
+        <!--|                                                        |-->
+        <!--==========================================================-->
+
+        <hr class="hr-2" id="c-program-2" />
+        <h2>2. Fundamentals of C Programming Language</h2>
+        <hr class="hr-2" />
+
+        <!-- Type of Error -->
+        <fieldset style="padding-bottom: 30px">
+          <legend>Types of Errors in Programming</legend>
+          <div class="field-container">
+            <table class="listing error-in-programming">
+              <tr>
+                <td>1. Syntax Error</td>
+                <td>
+                  <ul class="dashed">
+                    <li>error in the source code of a program / missing semicolon ( ; )</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>2. Logic Error</td>
+                <td>
+                  <ul class="dashed">
+                    <li>inaccurate output / answer that you expect</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>3. Run-time Error</td>
+                <td>
+                  <ul class="dashed">
+                    <li>dividing numbers with zero</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </fieldset>
+
+        <!-- C Program Structure -->
+        <fieldset id="c-program-3">
+          <legend>C Program Structure</legend>
+          <h3>Pre-processor Directives / Header / standard library :</h3>
+          <div class="code-section">
+            #include<span class="head">&#60;stdio.h></span>
+            <br />
+            #include<span class="head">&#60;math.h></span>
+            <span class="comment">&nbsp;&nbsp;&nbsp;//able to use sqrt() | pow()</span>
+            <br />
+            <br />
+            #define<span class="head"> PI 3.142 </span
+            ><span class="comment">&nbsp;&nbsp;&nbsp;//declaring PI as 3.142</span>
+          </div>
+
+          <h3>Main Function Block :</h3>
+          <div class="code-section">
+            <span class="datatype">int </span>main(){ <br /><br />
+            <span class="body">&nbsp;&nbsp; //body</span>
+            <br /><br />
+            <span class="return">return</span> 0;
+            <br />
+            }
+          </div>
+
+          <div
+            style="display: flex; flex-direction: row; width: 65%; justify-content: space-between"
+          >
+            <div style="display: flex; flex-direction: column">
+              <h3>Global Declarations :</h3>
+              <div class="code-section">
+                #include<span class="head">&#60;stdio.h></span> <br /><br />
+                <span class="datatype">int </span>x;
+                <span class="comment">&nbsp;&nbsp; //declared x as global</span><br /><br />
+                <span class="datatype">int </span>main(){ <br />
+                <span class="body"><br />&nbsp;&nbsp; //body</span>
+                <br /><br />
+                <span class="return">return</span> 0;
+                <br />
+                }
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column">
+              <h3>Local Declarations :</h3>
+              <div class="code-section">
+                #include<span class="head">&#60;stdio.h></span><br /><br />
+                <span class="datatype">int </span> main(){<br /><br />
+                &nbsp;&nbsp; <span class="datatype">int </span>x;
+                <span class="comment"> //declared x as local</span><br />
+                <span class="body"><br />&nbsp;&nbsp;//body</span><br /><br />
+                <span class="return">return</span> 0;<br />
+                }
+              </div>
+            </div>
+          </div>
+
+          <div class="moreinfo-container">
+            <a href="https://www.programiz.com/c-programming/library-function" target="_blank"
+              >More Info 1</a
+            >
+            <a
+              href="https://www.tutorialspoint.com/cprogramming/c_preprocessors.htm"
+              target="_blank"
+              >More Info 2</a
+            >
+            <a href="https://www.tutorialspoint.com/c_standard_library/index.htm" target="_blank"
+              >All Library</a
+            >
+          </div>
+        </fieldset>
+
+        <!-- Basic Data Type -->
+        <fieldset id="c-program-4">
+          <legend>Basic Data Types</legend>
+          <div class="field-container">
+            <img src="assets/data-type.png" alt="" style="width: 60%" />
+            <hr />
+            <div style="display: flex; justify-content: space-between; width: 400px">
+              <div style="display: block">
+                <h4>Basic Datatype</h4>
+                <ul>
+                  <li>int</li>
+                  <li>long int</li>
+                  <li>float</li>
+                  <li>long float</li>
+                  <li>double</li>
+                  <li>char</li>
+                </ul>
+              </div>
+              <div style="display: block">
+                <h4>Derived Datatype</h4>
+                <ul>
+                  <li>array</li>
+                  <li>struct</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="moreinfo-container">
+            <a href="https://www.javatpoint.com/data-types-in-c" target="_blank">More Info 1</a>
+            <a href="https://www.programiz.com/c-programming/c-data-types" target="_blank"
+              >More Info 2</a
+            >
+            <a href="assets/22042020_VB-Notes.pdf" target="_blank">pdf</a>
+          </div>
+        </fieldset>
+
+        <!-- Flow Control -->
+        <fieldset style="padding-bottom: 30px" id="c-program-5">
+          <legend style="color: #6e60af; text-align: center; font-size: 25px">Flow Control</legend>
+
+          <!-- loop -->
+          <fieldset class="level">
+            <legend>Types of loop</legend>
+            <div class="field-container">
+              <!-- for loop -->
+              <div class="collapsible-for-loop">
+                <input type="checkbox" id="collapsible-head-for-loop" />
+                <label for="collapsible-head-for-loop" class="for-loop">for loop</label>
+                <div class="collapsible-text-for-loop">
+                  <div data-pym-src="https://www.jdoodle.com/embed/v0/3o8g?stdin=0&arg=0"></div>
+                </div>
+              </div>
+
+              <!-- while loop -->
+              <div class="collapsible-while-loop">
+                <input type="checkbox" id="collapsible-head-while-loop" />
+                <label for="collapsible-head-while-loop" class="while-loop">while loop</label>
+                <div class="collapsible-text-while-loop">
+                  <div data-pym-src="https://www.jdoodle.com/embed/v0/3o8A?stdin=0&arg=0"></div>
+                </div>
+              </div>
+
+              <!-- do-while loop -->
+              <div class="collapsible-do-while-loop">
+                <input type="checkbox" id="collapsible-head-do-while-loop" />
+                <label for="collapsible-head-do-while-loop" class="do-while-loop"
+                  >do-while loop</label
+                >
+                <div class="collapsible-text-do-while-loop">
+                  <div data-pym-src="https://www.jdoodle.com/embed/v0/3o8G?stdin=0&arg=0"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="moreinfo-container">
+              <a href="https://www.programiz.com/c-programming/c-for-loop" target="_blank"
+                >for loop</a
+              >
+              <a href="https://www.programiz.com/c-programming/c-do-while-loops" target="_blank"
+                >while loop</a
+              >
+            </div>
+          </fieldset>
+
+          <!-- boolean expressions -->
+          <fieldset class="level">
+            <legend>Boolean Expressions</legend>
+            <div class="field-container">
+              <!-- if else statement -->
+              <div class="collapsible-if-else-statement">
+                <input type="checkbox" id="collapsible-head-if-else-statement" />
+                <label for="collapsible-head-if-else-statement" class="if-else-statement"
+                  >if-else statement</label
+                >
+                <div class="collapsible-text-if-else-statement">
+                  <div data-pym-src="https://www.jdoodle.com/embed/v0/3oa2?stdin=1&arg=0"></div>
+                </div>
+              </div>
+
+              <!-- switch case -->
+              <div class="collapsible-switch-case">
+                <input type="checkbox" id="collapsible-head-switch-case" />
+                <label for="collapsible-head-switch-case" class="switch-case"
+                  >switch case statement</label
+                >
+                <div class="collapsible-text-switch-case">
+                  <div data-pym-src="https://www.jdoodle.com/embed/v0/3oaT?stdin=1&arg=0"></div>
+                </div>
+              </div>
+            </div>
+            <div class="moreinfo-container">
+              <a
+                href="https://www.programiz.com/c-programming/c-switch-case-statement"
+                target="_blank"
+                >switch case</a
+              >
+            </div>
+          </fieldset>
+        </fieldset>
+
+        <!-- C Program Operator -->
+        <fieldset id="c-program-6">
+          <legend>C Program Operators</legend>
+          <div class="field-container">
+            <table class="operator-and-syntax">
+              <tr>
+                <th>Operator</th>
+                <th>Meaning</th>
+              </tr>
+              <tr>
+                <th colspan="2" style="background: #b6b2b2">Arithmetic operators</th>
+              </tr>
+              <tr>
+                <td>+</td>
+                <td>Plus</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>Minus</td>
+              </tr>
+              <tr>
+                <td>*</td>
+                <td>Multiply</td>
+              </tr>
+              <tr>
+                <td>/</td>
+                <td>Divide</td>
+              </tr>
+              <tr>
+                <td>%</td>
+                <td>Modulus (to find remainders)</td>
+              </tr>
+              <tr>
+                <td>++</td>
+                <td>Increment operator - increases integer value by one</td>
+              </tr>
+              <tr>
+                <td>--</td>
+                <td>Decrement operator - decreases integer value by one</td>
+              </tr>
+              <tr>
+                <th colspan="2" style="background: #b6b2b2">Relational operators</th>
+              </tr>
+              <tr>
+                <td>==</td>
+                <td>equal</td>
+              </tr>
+              <tr>
+                <td>!=</td>
+                <td>NOT equal</td>
+              </tr>
+              <tr>
+                <td>></td>
+                <td>Larger than</td>
+              </tr>
+              <tr>
+                <td>&#60;</td>
+                <td>Smaller than</td>
+              </tr>
+              <tr>
+                <td>>=</td>
+                <td>Larger equal than</td>
+              </tr>
+              <tr>
+                <td>&#60;=</td>
+                <td>Smaller equal than</td>
+              </tr>
+              <tr>
+                <th colspan="2" style="background: #b6b2b2">Logical operators</th>
+              </tr>
+
+              <tr>
+                <td>&&</td>
+                <td>AND</td>
+              </tr>
+              <tr>
+                <td>||</td>
+                <td>OR</td>
+              </tr>
+              <tr>
+                <td>!</td>
+                <td>NOT</td>
+              </tr>
+              <tr>
+                <th colspan="2" style="background: #b6b2b2">Assignment Operators</th>
+              </tr>
+              <tr>
+                <td>=</td>
+                <td>assign</td>
+              </tr>
+              <tr>
+                <td>+=</td>
+                <td>adds right operand to the left operand and assign the result to left</td>
+              </tr>
+              <tr>
+                <td>-=</td>
+                <td>
+                  subtracts right operand from the left operand and assign the result to left
+                  operand
+                </td>
+              </tr>
+              <tr>
+                <td>*=</td>
+                <td>
+                  multiply left operand with the right operand and assign the result to left operand
+                </td>
+              </tr>
+              <tr>
+                <td>/=</td>
+                <td>
+                  divides left operand with the right operand and assign the result to left operand
+                </td>
+              </tr>
+              <tr>
+                <td>%=</td>
+                <td>calculate modulus using two operands and assign the result to left operand</td>
+              </tr>
+              <tr>
+                <th colspan="2" style="background: #b6b2b2">Special operators</th>
+              </tr>
+              <tr>
+                <td>\n</td>
+                <td>Append (Next Line)</td>
+              </tr>
+              <tr>
+                <td>;</td>
+                <td>terminator</td>
+              </tr>
+              <tr>
+                <td>//</td>
+                <td>Comment</td>
+              </tr>
+              <tr>
+                <td>&</td>
+                <td>address</td>
+              </tr>
+            </table>
+          </div>
+          <div class="moreinfo-container">
+            <a href="https://www.studytonight.com/c/operators-in-c.php" target="_blank"
+              >More Info</a
+            >
+          </div>
+        </fieldset>
+
+        <!-- Input and Output -->
+        <fieldset id="c-program-7">
+          <legend>Input and Output</legend>
+          <div class="field-container">
+            <h3 style="color: black; text-align: center">Input</h3>
+
+            <!-- scanf -->
+            <div class="collapsible-scanf">
+              <input type="checkbox" id="collapsible-head-scanf" />
+              <label for="collapsible-head-scanf" class="scanf">scanf</label>
+              <div class="collapsible-text-scanf">
+                <div data-pym-src="https://www.jdoodle.com/embed/v0/3nIM?stdin=1&arg=0"></div>
+              </div>
+            </div>
+
+            <!-- getchar -->
+            <div class="collapsible-getchar">
+              <input type="checkbox" id="collapsible-head-getchar" />
+              <label for="collapsible-head-getchar" class="getchar">getchar</label>
+              <div class="collapsible-text-getchar">
+                <div data-pym-src="https://www.jdoodle.com/embed/v0/3o6M?stdin=1&arg=0"></div>
+              </div>
+            </div>
+
+            <!-- printf -->
+            <h3 style="color: black; text-align: center">Output</h3>
+            <div class="collapsible-printf">
+              <input type="checkbox" id="collapsible-head-printf" />
+              <label for="collapsible-head-printf" class="printf">printf</label>
+              <div class="collapsible-text-printf">
+                <div data-pym-src="https://www.jdoodle.com/embed/v0/3nIE?stdin=0&arg=0"></div>
+              </div>
+            </div>
+          </div>
+          <div class="moreinfo-container">
+            <a href="https://www.programiz.com/c-programming/c-input-output" target="_blank"
+              >More Info</a
+            >
+          </div>
+        </fieldset>
+
+        <!--====  End of Fundamentals of C PRogramming Language  ====-->
+
+        <!--==================================================-->
+        <!--|                                                |-->
+        <!--|         Problem solving in programming         |-->
+        <!--|                                                |-->
+        <!--==================================================-->
+
+        <hr id="c-program-8" />
+        <h2 id="select-step-of-problem-solving">3. Problem Solving in Programing</h2>
+        <hr class="hr-2" />
+
+        <!-- Steps of problem solving -->
+        <fieldset style="padding-bottom: 30px">
+          <legend style="color: #6e60af; text-align: center; margin-bottom: 30px">
+            Steps of Problem Solving using a computer
+          </legend>
+          <fieldset style="padding-bottom: 30px" class="level">
+            <u style="font-size: 20px; padding: 5px">Steps :</u>
+            <ol class="step-of-problem-solving">
+              <li class="step-of-problem-solving">
+                <a href="#step-of-problem-solving1">Program Clarification</a>
+              </li>
+              <li class="step-of-problem-solving">
+                <a href="#step-of-problem-solving2">Program Design</a>
+              </li>
+              <li class="step-of-problem-solving">
+                <a href="#step-of-problem-solving3">Program Coding</a>
+              </li>
+              <li class="step-of-problem-solving">
+                <a href="#step-of-problem-solving4">Program Testing</a>
+              </li>
+              <li class="step-of-problem-solving">
+                <a href="#step-of-problem-solving5">Program Documentation</a>
+              </li>
+              <li class="step-of-problem-solving">
+                <a href="#step-of-problem-solving6">Maintenance</a>
+              </li>
+            </ol>
+          </fieldset>
+
+          <!-- Program Clarification / Problem Analysis -->
+          <fieldset id="step-of-problem-solving1" class="level">
+            <legend>Program Clarification / Program Requirement Report</legend>
+            <div class="field-container">
+              <ul>
+                <li>Identification of problem</li>
+                <li>Input requirements</li>
+                <li>Process requirements</li>
+                <li>Output requirements</li>
+              </ul>
+            </div>
+            <div class="moreinfo-container">
+              <a href="#select-step-of-problem-solving">Select Steps</a>
+            </div>
+          </fieldset>
+
+          <!-- Solution Design -->
+          <fieldset id="step-of-problem-solving2" class="level">
+            <legend>Solution Design</legend>
+            <div class="field-container">
+              <h3>Tools Commonly Used :</h3>
+              <ul>
+                <li>Flowchart</li>
+                <li>Pseudocode</li>
+                <li>Decision Table</li>
+                <li>etc...</li>
+              </ul>
+              <div style="height: 20px"></div>
+              <h3>Program Design Aspects / Specification :</h3>
+              <ul>
+                <li>Program Structure Design</li>
+                <li>Data structure design</li>
+                <li>Procedural / Algorithm design</li>
+                <li>Interface Design</li>
+              </ul>
+            </div>
+            <div class="moreinfo-container">
+              <a href="#select-step-of-problem-solving">Select Steps</a>
+            </div>
+          </fieldset>
+
+          <!-- Implementation -->
+          <fieldset id="step-of-problem-solving3" class="level">
+            <legend>Implementation</legend>
+            <div class="field-container">
+              <h3>Steps in Coding :</h3>
+              <ol>
+                <li>translating the solution algorithm into a programming language</li>
+                <li>creating programs by entering the programming language code into computer</li>
+              </ol>
+            </div>
+            <div class="moreinfo-container">
+              <a href="#select-step-of-problem-solving">Select Steps</a>
+            </div>
+          </fieldset>
+
+          <!-- Testing and Validation -->
+          <fieldset id="step-of-problem-solving4" class="level">
+            <legend>Testing & Validation</legend>
+            <div class="field-container">
+              Program developed has to be tested & validated properly before deliver to the user.
+              <h3>3 types of errors:</h3>
+              <ul>
+                <li>Syntax Error</li>
+                <li>Logical Error</li>
+                <li>Runtime Error</li>
+              </ul>
+            </div>
+            <div class="moreinfo-container">
+              <a href="#select-step-of-problem-solving">Select Steps</a>
+            </div>
+          </fieldset>
+
+          <!-- Program Documentation -->
+          <fieldset id="step-of-problem-solving5" class="level">
+            <legend>Program Documentation</legend>
+            <div class="field-container">
+              Program documentation is the information that describes how a program is used
+              <h3>Examples :</h3>
+              <ul>
+                <li>End-user manuals</li>
+                <li>Troubleshooting assistance</li>
+              </ul>
+            </div>
+            <div class="moreinfo-container">
+              <a href="#select-step-of-problem-solving">Select Steps</a>
+            </div>
+          </fieldset>
+
+          <!-- Maintenance -->
+          <fieldset id="step-of-problem-solving6" class="level">
+            <legend>Maintenance</legend>
+            <div class="field-container">
+              If users encountered any problem or wants any enhancement of the program,<br />then
+              phases need to be repeated from the beginning
+            </div>
+            <div class="moreinfo-container">
+              <a href="#select-step-of-problem-solving">Select Steps</a>
+            </div>
+          </fieldset>
+        </fieldset>
+
+        <!--====  End of Problem solving in programming  ====-->
+
+        <!--=====================================-->
+        <!--|                                   |-->
+        <!--|         Control Structure         |-->
+        <!--|                                   |-->
+        <!--=====================================-->
+
+        <hr id="c-program-9" />
+        <h2>4. Control Structures</h2>
+        <hr class="hr-2" />
+
+        <!-- Algorithm construction -->
+        <fieldset>
+          <legend>Algorithm Construction</legend>
+          <div class="field-container">
+            <span style="color: orangered">&#9733;&#9733;&#9733;</span>
+            <span><b>Algorithm</b> is a list of steps for solving a problem.</span>
+            <div style="height: 20px"></div>
+            <h3>Algorithm Representations :</h3>
+            <ul>
+              <li>Flowchart</li>
+              <li>Pseudocode</li>
+              <li>Decision Table</li>
+            </ul>
+          </div>
+          <div class="moreinfo-container">
+            <a href="http://www.flowgorithm.org/download/" target="_blank" style="left: 81%"
+              >Download Flowgarithm</a
+            >
+            <a
+              href="http://www.flowgorithm.org/documentation/index.htm"
+              target="_blank"
+              style="left: 81%"
+              >Flowgarithm Manual</a
+            >
+          </div>
+        </fieldset>
+
+        <!-- Program Control Structure -->
+        <fieldset style="padding-bottom: 30px">
+          <legend>Program Control Structure</legend>
+          <div class="field-container">
+            <ul>
+              <li>Sequential Control</li>
+              <li>
+                Selection Control
+                <ul>
+                  <li>simple if</li>
+                  <li>if else</li>
+                  <li>nested if</li>
+                  <li>switch case</li>
+                </ul>
+              </li>
+              <li>
+                Repetition / Iteration Control
+                <ul>
+                  <li>for loop</li>
+                  <li>while loop</li>
+                  <li>do-while loop</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+
+        <!--====  End of Control Structure  ====-->
+
+        <!--============================-->
+        <!--|                          |-->
+        <!--|         Function         |-->
+        <!--|                          |-->
+        <!--============================-->
+
+        <hr id="c-program-10" />
+        <h2>5. Functions</h2>
+        <hr class="hr-2" />
+
+        <fieldset>
+          <legend>Types of Function</legend>
+          <p>
+            <b>Function</b> is a self-contained program segment that carries out come specific,
+            well-defined task.
+          </p>
+
+          <ol>
+            <li>Standard Library Function</li>
+            <li>Programmer-defined Function</li>
+          </ol>
+
+          <hr />
+
+          <h3>Standard Library Function</h3>
+          <div class="code-section">
+            <ol>
+              <li>printf()</li>
+              <li>scanf()</li>
+              <li>pow()</li>
+              <li>sqrt()</li>
+              <li>etc.</li>
+            </ol>
+          </div>
+
+          <h3>Programmer-defined Function</h3>
+          <ol>
+            <li>Declaring Function Prototype</li>
+            <li>
+              Calling a Function
+              <span style="color: #6e60af">(Function Call)</span>
+            </li>
+            <li>
+              Defining of a Function
+              <span style="color: #6e60af">(Function Definition)</span>
+            </li>
+          </ol>
+
+          <h3>Passing Parameters to a Function</h3>
+          <table class="listing">
+            <tr>
+              <td>1. <b>Pass by Value</b></td>
+              <td>passing an array <b>element</b> to a function</td>
+            </tr>
+            <tr>
+              <td>2. <b>Pass by Reference</b></td>
+              <td>passing an <b>entire</b> array to a function</td>
+            </tr>
+          </table>
+          <hr class="hr-2" />
+
+          <img src="assets/function.png" alt="" style="width: 80%; margin: 20px 0 0 0" />
+
+          <h3>How it works :</h3>
+
+          <img src="assets/function3.png" alt="" style="width: 80%; margin: 20px 0 0 0" />
+
+          <div class="moreinfo-container">
+            <a href="https://www.programiz.com/c-programming/c-functions" target="_blank"
+              >More Info</a
+            >
+          </div>
+        </fieldset>
+
+        <!--====  End of Function  ====-->
+
+        <!--==================================-->
+        <!--|                                |-->
+        <!--|         Data Structure         |-->
+        <!--|                                |-->
+        <!--==================================-->
+
+        <hr id="c-program-11" />
+        <h2>6. Data Structure</h2>
+        <hr class="hr-2" />
+
+        <!-- array -->
+        <fieldset id="c-program-12">
+          <legend>Array</legend>
+          An <b>array</b> is a series of <mark>memory locations</mark> – or 'boxes' – each of which
+          holds a single item of data, but with each box sharing the same name. All data in an array
+          must be of the <mark>same data type</mark>.
+          <br />
+          <ol style="margin: 20px 20px">
+            <li>One-Dimensional Array</li>
+            <li>Two-Dimensional Array</li>
+          </ol>
+          <hr />
+
+          <h3>One-Dimensional Array :</h3>
+          <img src="assets/oneD_array.png" alt="" style="width: 70%; margin: 20px 0 0 0" />
+
+          <h3>Two-Dimensional Array :</h3>
+          <img src="assets/twoD_array.png" alt="" style="width: 70%; margin: 20px 0 0 0" />
+
+          <div class="moreinfo-container">
+            <a href="https://www.programiz.com/c-programming/c-arrays" target="_blank">More Info</a>
+          </div>
+        </fieldset>
+
+        <!-- Structures -->
+        <fieldset id="c-program-13" style="padding-bottom: 20px">
+          <legend>Structures</legend>
+
+          <!-- Sorting Algorithm -->
+          <fieldset>
+            <legend>Sorting Algorithm</legend>
+            <div class="field-container">
+              <h3>Bubble Sort</h3>
+              <img src="assets/bubble-sort.gif" alt="" style="width: 60%; margin-top: 20px" />
+              <img src="assets/bubble-sort.png" alt="" style="width: 80%; margin-top: 20px" />
+
+              <hr style="margin: 80px 0" />
+
+              <h3>Insertion Sort</h3>
+              <img src="assets/insertion-sort.gif" alt="" style="width: 60%; margin-top: 20px" />
+              <img src="assets/insertion-sort.png" alt="" style="width: 80%; margin-top: 20px" />
+            </div>
+
+            <div class="moreinfo-container">
+              <a href="https://www.toptal.com/developers/sorting-algorithms" target="_blank"
+                >Animation</a
+              >
+              <a
+                href="https://www.programmingsimplified.com/c/source-code/c-program-bubble-sort"
+                target="_blank"
+                >Bubble Sort</a
+              >
+              <a
+                href="https://www.programmingsimplified.com/c/source-code/c-program-insertion-sort"
+                target="_blank"
+                >Insertion Sort</a
+              >
+            </div>
+          </fieldset>
+
+          <!-- Searching Algorithm -->
+          <fieldset>
+            <legend>Searching Algorithm</legend>
+            <h3>Linear Search</h3>
+            <img src="assets/linear-search.gif" alt="" style="width: 60%; margin-top: 20px" />
+            <img src="assets/linear-search.png" alt="" style="width: 80%; margin-top: 20px" />
+
+            <div class="moreinfo-container">
+              <a
+                href="https://yongdanielliang.github.io/animation/web/LinearSearchNew.html"
+                target="_blank"
+                >Animation</a
+              >
+            </div>
+          </fieldset>
+        </fieldset>
+
+        <!--====  End of Data Structure  ====-->
+      </div>
+      <!--====  End of flex-grow  ====-->
+    </div>
+    <!--====  End of container  ====-->
+
+    <a class="top" href="#top"
+      ><button class="gotop">^<br />Top</button></a
+    >
+  </body>
+</html>

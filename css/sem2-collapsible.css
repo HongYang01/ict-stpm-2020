@@ -1,0 +1,205 @@
+/*Collapsible*/
+
+label {
+  display: block;
+  max-width: 10px;
+  white-space: nowrap;
+  transition: 1s;
+  font-size: 18px;
+}
+
+label:hover {
+  transform: scale(1.1);
+  color: #201459;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+label:active {
+  transition: 0.2s;
+  opacity: 0.5;
+}
+
+label:focus {
+  transition: 0.2s;
+  opacity: 0.5;
+}
+
+input {
+  display: none;
+}
+
+/*==================printf===================*/
+
+.collapsible-text-printf {
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: 1s;
+  max-height: 1px;
+  overflow: hidden;
+  border: 3px solid #b8b5ae;
+  border-radius: 10px;
+  margin: 5px 0 5px 0;
+}
+
+.collapsible-printf input:checked ~ .collapsible-text-printf {
+  transition: 2s;
+  opacity: 1;
+  max-height: 530px;
+  padding-bottom: 25px;
+  background: inherit;
+}
+
+/*==================scanf===================*/
+.collapsible-text-scanf {
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: 1s;
+  max-height: 1px;
+  overflow: hidden;
+  border: 3px solid #b8b5ae;
+  border-radius: 10px;
+  margin: 5px 0 5px 0;
+}
+
+.collapsible-scanf input:checked ~ .collapsible-text-scanf {
+  transition: 2s;
+  opacity: 1;
+  max-height: 690px;
+  padding-bottom: 25px;
+  background: inherit;
+}
+
+/*==================getchar===================*/
+
+.collapsible-text-getchar {
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: 1s;
+  max-height: 1px;
+  overflow: hidden;
+  border: 3px solid #b8b5ae;
+  border-radius: 10px;
+  margin: 5px 0 5px 0;
+}
+
+.collapsible-getchar input:checked ~ .collapsible-text-getchar {
+  transition: 2s;
+  opacity: 1;
+  max-height: 650px;
+  padding-bottom: 25px;
+  background: inherit;
+}
+
+/*==================for loop===================*/
+.collapsible-text-for-loop {
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: 1s;
+  max-height: 1px;
+  overflow: hidden;
+  border: 3px solid #b8b5ae;
+  border-radius: 10px;
+  margin: 5px 0 5px 0;
+}
+
+.collapsible-for-loop input:checked ~ .collapsible-text-for-loop {
+  transition: 2s;
+  opacity: 1;
+  /*collapse-height*/
+  max-height: 700px;
+  padding-bottom: 25px;
+  background: inherit;
+}
+
+/*==================while loop===================*/
+
+.collapsible-text-while-loop {
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: 1s;
+  max-height: 1px;
+  overflow: hidden;
+  border: 3px solid #b8b5ae;
+  border-radius: 10px;
+  margin: 5px 0 5px 0;
+}
+
+.collapsible-while-loop input:checked ~ .collapsible-text-while-loop {
+  transition: 2s;
+  opacity: 1;
+  /*collapse-height*/
+  max-height: 570px;
+  padding-bottom: 25px;
+  background: inherit;
+}
+
+/*==================do-while loop===================*/
+.collapsible-text-do-while-loop {
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: 1s;
+  max-height: 1px;
+  overflow: hidden;
+  border: 3px solid #b8b5ae;
+  border-radius: 10px;
+  margin: 5px 0 5px 0;
+}
+
+.collapsible-do-while-loop input:checked ~ .collapsible-text-do-while-loop {
+  transition: 2s;
+  opacity: 1;
+  /*collapse-height*/
+  max-height: 570px;
+  padding-bottom: 25px;
+  background: inherit;
+}
+
+/*==================if-else-statement===================*/
+.collapsible-text-if-else-statement {
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: 1s;
+  max-height: 1px;
+  overflow: hidden;
+  border: 3px solid #b8b5ae;
+  border-radius: 10px;
+  margin: 5px 0 5px 0;
+}
+
+.collapsible-if-else-statement
+  input:checked
+  ~ .collapsible-text-if-else-statement {
+  transition: 2s;
+  opacity: 1;
+  max-height: 750px;
+  padding-bottom: 25px;
+}
+
+/*==================switch case===================*/
+.collapsible-text-switch-case {
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: 1s;
+  max-height: 1px;
+  overflow: hidden;
+  border: 3px solid #b8b5ae;
+  border-radius: 10px;
+  margin: 5px 0 5px 0;
+}
+
+.collapsible-switch-case input:checked ~ .collapsible-text-switch-case {
+  transition: 2s;
+  opacity: 1;
+  /*collapse-height*/
+  max-height: 850px;
+  padding-bottom: 25px;
+}

@@ -1,0 +1,131 @@
+/*Collapsible*/
+
+label {
+  display: block;
+  max-width: 10px;
+  white-space: nowrap;
+  transition: 1s;
+}
+
+label:hover {
+  transform: scale(1.1);
+  color: #201459;
+  transition: .5s;
+  cursor: pointer;
+}
+
+label:active {
+  transition: .2s;
+  opacity: .5;
+}
+
+label:focus {
+  transition: .2s;
+  opacity: .5;
+}
+
+input {
+  display: none;
+}
+
+/*============================ analysis method ============================*/
+
+.collapsible-text-analysis-method {
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: 1s;
+  max-height: 1px;
+  overflow: hidden;
+}
+
+.collapsible-analysis-method input:checked~.collapsible-text-analysis-method {
+  transition: 2s;
+  opacity: 1;
+  max-height: 380px;
+  background: inherit;
+}
+
+
+
+
+
+/*======================= Design Deliverable =======================*/
+
+
+.collapsible-text-design-deliverable {
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: 1s;
+  max-height: 1px;
+  overflow: hidden;
+}
+
+.collapsible-design-deliverable input:checked~.collapsible-text-design-deliverable {
+  transition: 2s;
+  opacity: 1;
+  max-height: 320px;
+  background: inherit;
+}
+
+
+
+
+
+
+
+/*===================== implementation testing =====================*/
+
+.collapsible-text-implementation-testing {
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: 1s;
+  max-height: 1px;
+  overflow: hidden;
+}
+
+.collapsible-implementation-testing input:checked~.collapsible-text-implementation-testing {
+  transition: 2s;
+  opacity: 1;
+  max-height: 1050px;
+}
+
+
+
+
+
+
+
+/*====================== implementation install ======================*/
+
+.collapsible-text-implementation-install {
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: 1s;
+  max-height: 1px;
+  overflow: hidden;
+}
+
+
+.collapsible-implementation-install input:checked~.collapsible-text-implementation-install {
+  transition: 2s;
+  opacity: 1;
+  max-height: 450px;
+}
+
+
+
+
+/*=============================== style-min ===============================*/
+@media only screen and (max-width: 1100px) {
+  .collapsible-implementation-testing input:checked~.collapsible-text-implementation-testing {
+    max-height: 1350px;
+  }
+
+  .collapsible-implementation-install input:checked~.collapsible-text-implementation-install {
+    max-height: 550px;
+  }
+}

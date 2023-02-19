@@ -1,0 +1,40 @@
+/*Horizontal*/
+.progress-container {
+  min-width: 100%;
+  /*width: 80%;*/
+  margin: -12px 0 0 -8px;
+  height: 10px;
+  position: fixed;
+  background: #ddd;
+  z-index: 1;
+}
+
+.progress-bar {
+  opacity: 1;
+  height: 10px;
+  width: 0;
+  background: #6e60af;
+}
+
+
+
+/*Vertical*/
+/*.progress-container {
+  min-width: 39%;
+  margin: 4% 2% 0 6%;
+  height: 15px;
+  border-radius: 15px;
+  position: fixed;
+  background: #ddd;
+
+  transform: rotate(90deg);
+  transform-origin: 0% 0%;
+}
+
+.progress-bar {
+  opacity: .5;
+  height: 15px;
+  background: #6e60af;
+  width: 0%;
+  border-radius: 15px;
+}*/

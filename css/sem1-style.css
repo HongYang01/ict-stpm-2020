@@ -1,0 +1,288 @@
+/*======================= ict multimedia =======================*/
+
+table.ict-multimedia td:nth-child(1) {
+  width: 25%;
+}
+
+
+/*======================= hardware aspect =======================*/
+
+ul.hardware-aspect li {
+  transition: 1s;
+  transform: scale(1.0);
+  width: 0;
+  white-space: nowrap;
+}
+
+ul.hardware-aspect li:hover {
+  transition: .5s;
+  transform: scale(1.1);
+}
+
+/*@media only screen and (max-width: 1100px) {
+  ul.hardware-aspect li a {
+    transition: 1s;
+    transform: scale(1.0);
+    width: 0;
+    white-space: nowrap;
+  }
+}*/
+
+
+
+
+/*=========================== storage ===========================*/
+table.aspect-storage {
+  margin: 0;
+}
+
+/*========================= definition =========================*/
+table.definition {
+  margin: 0;
+}
+
+table.definition td {
+  vertical-align: top;
+}
+
+table.definition td:nth-child(1) {
+  width: 20%;
+}
+
+
+/*=========================== signal ===========================*/
+table.signal {
+  margin: 0;
+}
+
+
+/*========================== network ==========================*/
+table.network {
+  margin-top: 30px;
+}
+
+table.network td {
+  padding: 5px 10px;
+}
+
+table.network td:nth-child(1) {
+  font-weight: bolder;
+}
+
+table.network td:nth-child(2),
+table.network td:nth-child(3),
+table.network td:nth-child(4) {
+  text-align: center;
+  width: 25%;
+}
+
+/*============================ network-architecture ============================*/
+ul.network-architecture li {
+  transition: 1s;
+  width: 0;
+  white-space: nowrap;
+}
+
+ul.network-architecture li:hover {
+  transition: .5s;
+  transform: scale(1.1);
+}
+
+
+
+
+/*================================== Application ==================================*/
+table.application {
+  margin: 0;
+  width: 70%;
+}
+
+table.application td:nth-child(1) {
+  font-weight: bolder;
+  width: 20%;
+}
+
+
+/*================================= Types of Virus =================================*/
+table.type-of-virus {
+  margin: 30px 0 0 0;
+  width: 70%;
+}
+
+table.type-of-virus td:nth-child(1) {
+  font-weight: bolder;
+  width: 20%;
+}
+
+/*=============================== instrusive-internet ===============================*/
+table.instrusive-internet {
+  margin: 0;
+  width: 70%;
+
+}
+
+table.instrusive-internet td:nth-child(1) {
+  font-weight: bolder;
+  width: 20%;
+}
+
+
+/*================================= design-principle =================================*/
+table.design-principle {
+  width: 70%;
+}
+
+table.design-principle td:nth-child(1) {
+  width: 27%;
+  font-weight: bolder;
+}
+
+
+
+/*=============================== multimedia-element ===============================*/
+table.design-element {
+  margin: 0;
+  width: 75%;
+}
+
+table.design-element td:nth-child(1) {
+  width: 20%;
+  font-weight: bolder;
+}
+
+
+
+/*================================= basic-element =================================*/
+table.basic-element {
+  margin: 30px 0 0 0;
+  width: 70%;
+}
+
+table.basic-element td:nth-child(1) {
+  font-weight: bolder;
+}
+
+/*================================ computer-graphics ================================*/
+table.computer-graphics {
+  margin: 0;
+  width: 70%;
+}
+
+table.computer-graphics td:nth-child(1),
+table.computer-graphics td:nth-child(3) {
+  text-align: center;
+  width: 40%;
+}
+
+table.computer-graphics th:nth-child(2),
+table.computer-graphics td:nth-child(2) {
+  text-align: center;
+  width: 20%;
+  font-weight: bolder;
+  background: #839CD5;
+}
+
+
+
+/*===================== animation-principle =====================*/
+table.animation-principle {
+  margin: 30px 0 0 0;
+  width: 70%;
+}
+
+table.animation-principle td:nth-child(1) {
+  font-weight: bolder;
+  width: 30%;
+}
+
+
+
+/*============================ video ============================*/
+table.video {
+  margin: 0;
+  width: 70%;
+}
+
+table.video td:nth-child(1),
+table.video td:nth-child(3) {
+  text-align: center;
+  width: 40%;
+}
+
+table.video th:nth-child(2),
+table.video td:nth-child(2) {
+  text-align: center;
+  width: 20%;
+  font-weight: bolder;
+  background: #839CD5;
+}
+
+
+/*======================== user-inteface ========================*/
+table.user-inteface {
+  width: 70%;
+}
+
+table.user-inteface td:nth-child(1) {
+  font-weight: bolder;
+}
+
+
+
+/*===================== multimedia-delivery =====================*/
+table.multimedia-delivery {
+  margin-top: 30px;
+  width: 70%;
+}
+
+table.multimedia-delivery td:nth-child(1),
+table.multimedia-delivery td:nth-child(2) {
+  width: 50%;
+  text-align: center;
+}
+
+
+
+/*==================== multimedia-development ====================*/
+table.multimedia-development {
+  margin-top: 30px;
+  width: 70%;
+}
+
+table.multimedia-development td:nth-child(1) {
+  font-weight: bolder;
+
+}
+
+
+
+
+
+
+/*========================== style-min ==========================*/
+
+@media only screen and (max-width: 1100px) {
+  table.definition td:nth-child(1) {
+    width: 35%;
+  }
+
+  table.signal td:nth-child(1) {
+    width: 28%;
+  }
+
+  table.data-comm td:nth-child(1) {
+    width: 28%;
+  }
+
+  table.network-architecture td:nth-child(1) {
+    width: 27%;
+  }
+
+  table.internet-www td:nth-child(1) {
+    width: 27%;
+  }
+
+  table.type-of-virus td:nth-child(1) {
+    width: 27%;
+  }
+}

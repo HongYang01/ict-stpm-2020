@@ -1,0 +1,84 @@
+/*TABLE*/
+/*==========================operator-and-syntax=============================*/
+table.operator-and-syntax {
+  width: auto;
+}
+
+table.operator-and-syntax td:nth-child(1) {
+  text-align: center;
+  line-height: 1;
+  width: 25%;
+}
+
+table.operator-and-syntax td:nth-child(2) {
+  width: 75%;
+  padding: 0 15px;
+  text-align: left;
+}
+
+/*==================== gen-programming-lang ======================*/
+table.gen-programming-lang {
+  width: 70%;
+}
+
+table.gen-programming-lang td:nth-child(1) {
+  font-weight: bold;
+  width: 25%;
+}
+
+table.gen-programming-lang td:nth-child(2) {
+  width: 70%;
+}
+
+/*======================= language-translator ======================*/
+
+table.language-translator {
+  width: 70%;
+}
+
+table.language-translator td:nth-child(1) {
+  font-weight: bold;
+  width: 25%;
+}
+
+table.language-translator td:nth-child(2) {
+  width: 70%;
+}
+
+/*====================== error-in-programming ======================*/
+table.error-in-programming {
+  width: 75%;
+}
+
+table.error-in-programming td:nth-child(1) {
+  font-weight: bold;
+  width: 25%;
+}
+
+table.error-in-programming td:nth-child(2) {
+  width: 70%;
+}
+
+/*=========== select-step-of-problem-solving button ===========*/
+li.step-of-problem-solving {
+  color: #5c4bac;
+  transition: 1s;
+  width: 5%;
+  white-space: nowrap;
+}
+
+li.step-of-problem-solving:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+li.step-of-problem-solving:active {
+  opacity: 0.5;
+}
+
+/*=========================== style-min ===========================*/
+@media only screen and (max-width: 1100px) {
+  table.operator-and-syntax {
+    font-size: 14px;
+  }
+}

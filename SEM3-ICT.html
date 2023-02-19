@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-min.css" />
+    <link rel="stylesheet" type="text/css" href="css/sem3-style.css" />
+    <link rel="stylesheet" type="text/css" href="css/sem3-collapsible.css" />
+    <link rel="stylesheet" type="text/css" href="css/HomepageListing.css" />
+    <link rel="stylesheet" type="text/css" href="css/progress-bar.css" />
+    <script type="text/javascript" src="js/progress-bar.js"></script>
+    <title>Form 6 - ICT SEM 3</title>
+  </head>
+
+  <body oncontextmenu="return false">
+    <!--================================-->
+    <!--|                              |-->
+    <!--|         Progress Bar         |-->
+    <!--|                              |-->
+    <!--================================-->
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <!--====  End of Progress Bar  ====-->
+
+    <div class="full-height-grow container">
+      <!--==========================-->
+      <!--|                        |-->
+      <!--|         Header         |-->
+      <!--|                        |-->
+      <!--==========================-->
+
+      <header class="main-header">
+        <div class="text-in-header">STPM ICT CheatSheet</div>
+        <ul class="header">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="SEM1-ICT.html">SEM 1</a></li>
+          <li><a href="SEM2-ICT.html">SEM 2</a></li>
+          <li><a href="SEM3-ICT.html" style="opacity: 0.5; pointer-events: none">SEM 3</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+        </ul>
+      </header>
+
+      <!--====  End of Header  ====-->
+
+      <h1 style="color: #201459">Semester 3</h1>
+
+      <!--==================================-->
+      <!--|                                |-->
+      <!--|         Select Content         |-->
+      <!--|                                |-->
+      <!--==================================-->
+
+      <fieldset class="select-content">
+        <details>
+          <summary>Select Content</summary>
+          <ol class="list-at-main-page">
+            <li><a href="#info-system-dev">Information System Development</a></li>
+            <li><a href="#system-dev-life-cycle">System Development Life Cycle (SDLC)</a></li>
+            <ul>
+              <li><a href="#system-dev-life-cycle">2.1 Introduction to SDLC</a></li>
+              <li><a href="#planning">2.2 SDLC Phase: Planning</a></li>
+              <li><a href="#analysis">2.3 SDLC Phase: Analysis</a></li>
+              <li><a href="#design">2.4 SDLC Phase: Design</a></li>
+              <li><a href="#implementation">2.5 SDLC Phase: Implementation</a></li>
+              <li><a href="#maintenance">2.6 SDLC Phase: Maintenance</a></li>
+            </ul>
+            <li><a href="#fundamental-DS">Fundamental of Relational Database Systems</a></li>
+            <li>
+              <a href="#DS-plan-design-admin"
+                >Database Systems Planning, Design, and Administration</a
+              >
+            </li>
+            <li><a href="#sql">Structured Query Language (SQL)</a></li>
+          </ol>
+        </details>
+      </fieldset>
+
+      <!--====  End of Select Content  ====-->
+
+      <div style="flex-grow: 1">
+        <!--=================================================-->
+        <!--|                                               |-->
+        <!--|         Information System Development        |-->
+        <!--|                                               |-->
+        <!--=================================================-->
+
+        <hr class="hr-2" />
+        <h2>1. Information System Development</h2>
+        <hr class="hr-2" />
+
+        <!-- Type of System -->
+        <fieldset style="padding-bottom: 30px">
+          <legend>Differences between manual & computerized system</legend>
+          <table class="type-of-system">
+            <tr>
+              <th>Manual System</th>
+              <th></th>
+              <th>Computerized System</th>
+            </tr>
+            <tr>
+              <td style="color: red">&#8681;</td>
+              <td>Speed</td>
+              <td style="color: green">&#8679;</td>
+            </tr>
+            <tr>
+              <td style="color: red">&#8681;</td>
+              <td>Storage</td>
+              <td style="color: green">&#8679;</td>
+            </tr>
+            <tr>
+              <td style="color: red">&#8681;</td>
+              <td>Productivity</td>
+              <td style="color: green">&#8679;</td>
+            </tr>
+            <tr>
+              <td style="color: green">&#8679;</td>
+              <td>Cost</td>
+              <td style="color: red">&#8681;</td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <!-- Personnel in Information System -->
+        <fieldset>
+          <legend>Personnel in Information System (Responsibility)</legend>
+          <table class="listing">
+            <tr>
+              <td><b>System / Project Manager</b></td>
+              <td>
+                <ul class="dashed">
+                  <li>Developing & monitoring the project plan</li>
+                  <li>Assigning resources</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><b>System Analyst</b></td>
+              <td>
+                <ul class="dashed">
+                  <li>Designing new information system</li>
+                  <li>Ensuring system meet the requirements</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><b>Programmer</b></td>
+              <td>
+                <ul class="dashed">
+                  <li>Building computer programs based on the system design</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <div class="moreinfo-container">
+            <a
+              href="https://bus206.pressbooks.com/chapter/chapter-people#:~:text=The%20Creators%20of%20Information%20Systems"
+              target="_blank"
+              >More Info</a
+            >
+          </div>
+        </fieldset>
+
+        <!-- Type of Information System -->
+        <fieldset>
+          <legend>Types of Information System</legend>
+          <div class="field-container">
+            <table class="info-system">
+              <tr>
+                <th>Types</th>
+                <th>Functions</th>
+              </tr>
+              <tr>
+                <td><b>[TPS] </b>Transaction Processing System</td>
+                <td>- Efficient at keeping records<br />- High volume</td>
+              </tr>
+              <tr>
+                <td><b>[MIS] </b>Decision Information System</td>
+                <td>- Support TPS<br />- Use the integrated database</td>
+              </tr>
+              <tr>
+                <td><b>[DSS] </b>Decision Support System</td>
+                <td>
+                  - Giving the best suggestion<br />- Uses modelling approach<br />- Adapt to users'
+                  styles
+                </td>
+              </tr>
+              <tr>
+                <td><b>[ES] </b>Expert System</td>
+                <td>- Support decision making<br />- problem-solving computer</td>
+              </tr>
+            </table>
+          </div>
+          <div class="moreinfo-container">
+            <a
+              href="https://altametrics.com/en/information-systems/information-system-types.html"
+              target="_blank"
+              >More Info</a
+            >
+          </div>
+        </fieldset>
+
+        <!--====  End of Information System Development  ====-->
+
+        <!--========================-->
+        <!--|                      |-->
+        <!--|         SDLC         |-->
+        <!--|                      |-->
+        <!--========================-->
+
+        <hr class="hr-2" id="system-dev-life-cycle" />
+        <h2>2. System Development Life Cycle - SDLC</h2>
+        <hr class="hr-2" />
+
+        <!-- System Development Methodologies -->
+        <fieldset>
+          <legend>System Development Methodologies / Process Model Representation</legend>
+          <table class="SDLC-sys-dev-model">
+            <tr>
+              <th>Model</th>
+              <th style="color: #20a25a">Advantage</th>
+              <th style="color: tomato">Disadvantage</th>
+            </tr>
+            <tr>
+              <td>Waterfall <span style="color: gray">[we use]</span></td>
+              <td><b>Easy</b> to understand</td>
+              <td><b>No</b> working version</td>
+            </tr>
+            <tr>
+              <td>Spiral</td>
+              <td>Good for large projects</td>
+              <td>Costly</td>
+            </tr>
+            <tr>
+              <td><b>[RAD] </b>Rapid Application Development</td>
+              <td>Fast development</td>
+              <td>User need to be actively involved</td>
+            </tr>
+          </table>
+          <div class="moreinfo-container">
+            <a
+              href="https://en.wikipedia.org/wiki/Software_development_process#Methodologies"
+              target="_blank"
+              >More Info</a
+            >
+          </div>
+        </fieldset>
+
+        <!-- phases -->
+        <fieldset id="select-phase" style="padding-bottom: 30px">
+          <legend style="text-align: center; font-size: 25px; color: #6e60af; margin-bottom: 30px">
+            Phases
+          </legend>
+          <img src="assets/waterfall-model.png" alt="" style="width: 450px" />
+
+          <!-- Type of Phases -->
+          <fieldset class="level">
+            <legend>Type of Phases <span style="color: dimgray">[Waterfall Model]</span></legend>
+            <div style="display: flex; justify-content: space-between; width: 40%">
+              <ol>
+                <li class="phases"><a href="#planning">Planning</a></li>
+                <li class="phases"><a href="#analysis">Analysis</a></li>
+                <li class="phases"><a href="#design">Design</a></li>
+                <li class="phases"><a href="#implementation">Implementation</a></li>
+                <li class="phases"><a href="#maintenance">Maintenance</a></li>
+              </ol>
+              <ul style="list-style: none; text-align: center">
+                <li>P</li>
+                <li>A</li>
+                <li>D</li>
+                <li>I</li>
+                <li>M</li>
+              </ul>
+            </div>
+            <div class="moreinfo-container">
+              <a
+                href="https://en.wikipedia.org/wiki/Systems_development_life_cycle#Phases"
+                target="_blank"
+                >More Info</a
+              >
+            </div>
+          </fieldset>
+
+          <!-- Planning -->
+          <fieldset id="planning" class="level">
+            <legend>1. Planning</legend>
+            <table class="Planning">
+              <tr>
+                <td>Purpose</td>
+                <td>
+                  - define problem<br />- produce a project schedule<br />- identify scopes<br />-
+                  ensure budget
+                </td>
+              </tr>
+              <tr>
+                <td>Feasibility<br />可行性研究</td>
+                <td>
+                  - Economic<br />- Technological<br />- Schedule<br />- Resource<br />-
+                  Organizational & cultural
+                </td>
+              </tr>
+              <tr>
+                <td>Outcome<br />(Deliverable)</td>
+                <td>
+                  - Preliminary Investigation Report<br />- Scope management plan<br />- Cost
+                  management plan<br />- Risk management plan<br />- Change management plan
+                </td>
+              </tr>
+            </table>
+            <div class="moreinfo-container">
+              <a href="#select-phase">Select Phases</a>
+            </div>
+          </fieldset>
+
+          <!-- Analysis -->
+          <fieldset id="analysis" class="level">
+            <legend>2. Analysis</legend>
+            <table class="Analysis">
+              <tr>
+                <td>Purpose</td>
+                <td>- determine users requirements<br />- determine new system requirement</td>
+              </tr>
+              <tr>
+                <td>Method<br />(Activity)</td>
+                <td>
+                  <div class="collapsible-analysis-method">
+                    <input type="checkbox" id="collapsible-head-analysis-method" checked />
+                    <label for="collapsible-head-analysis-method" class="analysis-method"
+                      >[4 Method]</label
+                    >
+                    <div class="collapsible-text-analysis-method">
+                      <table class="analysis-method">
+                        <tr>
+                          <th style="text-align: center">Method</th>
+                          <th style="text-align: center; color: mediumseagreen">Advantage</th>
+                          <th style="text-align: center; color: tomato">Disadvantage</th>
+                        </tr>
+                        <tr>
+                          <td><b>Interview</b></td>
+                          <td>
+                            Open-end question which can<br />base on a different level of people
+                          </td>
+                          <td>Time-consuming</td>
+                        </tr>
+                        <tr>
+                          <td><b>Questionnaire</b></td>
+                          <td>Good for collecting a large<br />group of data</td>
+                          <td>Hard to prepare a good question</td>
+                        </tr>
+                        <tr>
+                          <td><b>Document Review</b></td>
+                          <td>Provide valuable information<br />about organization & operation</td>
+                          <td>Difficult to read / understand</td>
+                        </tr>
+                        <tr>
+                          <td><b>Observation</b></td>
+                          <td>Highly reliable data</td>
+                          <td>May not be actual performance</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Outcome<br />(Deliverable)</td>
+                <td>
+                  - Collecting data<br />- Determine requirement specifications<br />- Technical
+                  requirements analysis<br />- Decision making
+                </td>
+              </tr>
+            </table>
+            <div class="moreinfo-container">
+              <a href="#select-phase">Select Phases</a>
+            </div>
+          </fieldset>
+
+          <!-- Design -->
+          <fieldset id="design" class="level">
+            <legend>3. Design</legend>
+            <table class="Design">
+              <tr>
+                <td>Purpose</td>
+                <td>
+                  <ul class="dashed">
+                    <li>
+                      to build various system models based on the decision made from analysis phase
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Outcome<br />(Deliverable)</td>
+                <td>
+                  <div class="collapsible-design-deliverable">
+                    <input type="checkbox" id="collapsible-head-design-deliverable" />
+                    <label for="collapsible-head-design-deliverable" class="design-deliverable"
+                      >[4 Deliverables]</label
+                    >
+                    <div class="collapsible-text-design-deliverable">
+                      <table class="design-deliverable">
+                        <tr>
+                          <th style="text-align: center">Deliverable</th>
+                          <th style="text-align: center">Explanation</th>
+                        </tr>
+                        <tr>
+                          <td><b>Logical Design</b></td>
+                          <td>Implementation independent</td>
+                        </tr>
+                        <tr>
+                          <td><b>Physical Design</b></td>
+                          <td>Implementation dependent</td>
+                        </tr>
+                        <tr>
+                          <td><b>Program Structure Design Specification</b></td>
+                          <td>Communication between various modules</td>
+                        </tr>
+                        <tr>
+                          <td><b>System Interface / Forms / Reports</b></td>
+                          <td>Objective + Targeted group</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <h2 style="color: black; font-size: 18px; margin-left: 25px">
+              User Guideline / Navigation / User Friendly
+            </h2>
+            <ul>
+              <li>Input control</li>
+              <li>Navigational components</li>
+              <li>Help-support</li>
+            </ul>
+            <div class="moreinfo-container">
+              <a href="#select-phase">Select Phases</a>
+            </div>
+          </fieldset>
+
+          <!-- Implementation -->
+          <fieldset id="implementation" class="level">
+            <legend>4. Implementation</legend>
+            <div class="field-container">
+              <table class="Implementation">
+                <tr>
+                  <td>Purpose</td>
+                  <td>
+                    <ul class="dashed">
+                      <li>To convert system design into a real working system</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Method<br />(Activity)</td>
+                  <td>
+                    <h3 style="margin: 0">8 Steps of implementation:</h3>
+                    <ul class="dashed">
+                      <li>Coding (translate program modules to code modules)</li>
+                      <li>
+                        <label
+                          for="collapsible-head-implementation-testing"
+                          class="implementation-testing"
+                          >Testing [3 Types]</label
+                        >
+                      </li>
+                      <li>
+                        <label
+                          for="collapsible-head-implementation-install"
+                          class="implementation-install"
+                          >Installation / Conversion [4 Types]</label
+                        >
+                      </li>
+                      <li>Review</li>
+                      <li>Training (User & Operator)</li>
+                      <li>Documentation</li>
+                      <li>Support</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Testing -->
+              <div class="collapsible-implementation-testing" id="testing">
+                <input type="checkbox" id="collapsible-head-implementation-testing" />
+                <div class="collapsible-text-implementation-testing">
+                  <fieldset style="padding-bottom: 30px">
+                    <legend style="text-align: center">Testing</legend>
+
+                    <table class="listing implementation-testing">
+                      <tr>
+                        <td><b>Manual Testing</b></td>
+                        <td>
+                          <ul class="dashed">
+                            <li>[Inspection | Walk-through | Desk Checking]</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><b>Automated Testing</b></td>
+                        <td>
+                          <ul class="dashed">
+                            <li>[Syntax Checking | Unit Test | Integrated Test | System Test]</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><b>Acceptance Testing</b></td>
+                        <td>
+                          <ul class="dashed">
+                            <li>[Alpha Testing | Beta Testing]</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <h3><u>1. Manual Testing</u></h3>
+                    <table class="listing implementation-testing">
+                      <tr>
+                        <td><b>Inspection</b></td>
+                        <td>
+                          <ul class="dashed">
+                            <li>other people help to check the design</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><b>Walk-through</b></td>
+                        <td>
+                          <ul class="dashed">
+                            <li>
+                              designed code is reviewed by the peer group (to ensure program logic)
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><b>Desk Checking</b></td>
+                        <td>
+                          <ul class="dashed">
+                            <li>test run & output (to achieve requirements)</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <h3><u>2. Automated Testing</u></h3>
+                    <table class="listing implementation-testing">
+                      <tr>
+                        <td><b>Syntax Checking</b></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><b>Unit Testing</b></td>
+                        <td>
+                          <ul class="dashed">
+                            <li>testing each component independently</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><b>Integration Checking</b></td>
+                        <td>
+                          <ul class="dashed">
+                            <li>testing collection of modules</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><b>System Checking</b></td>
+                        <td>
+                          <ul class="dashed">
+                            <li>ensure system function properly</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <h3><u>3. Acceptance Testing</u></h3>
+                    <table class="listing implementation-testing">
+                      <tr>
+                        <td><b>Alpha Testing</b></td>
+                        <td>
+                          <ul class="dashed">
+                            <li>tested by developers (to make sure everything works properly)</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><b>Beta Testing</b></td>
+                        <td>
+                          <ul class="dashed">
+                            <li>tested by users (to get valuable feedback)</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <h3>
+                      <span style="color: orangered">&#9733;&#9733;&#9733; </span>Without Acceptance
+                      Testing
+                    </h3>
+                    <ul>
+                      <li><b>Less</b> valuable feedback</li>
+                      <li><b>More</b> error in the system (bug)</li>
+                      <li><b>High expenses</b> to gather data</li>
+                      <li><b>Time consuming</b> to get valuable data</li>
+                    </ul>
+                  </fieldset>
+                </div>
+
+                <!-- Install -->
+                <div class="collapsible-implementation-install">
+                  <input type="checkbox" id="collapsible-head-implementation-install" />
+                  <div class="collapsible-text-implementation-install">
+                    <div class="field-container">
+                      <fieldset style="padding-bottom: 30px">
+                        <legend style="text-align: center">Installation / Conversion</legend>
+
+                        <table class="implementation-install">
+                          <tr>
+                            <th style="text-align: center">Conversion</th>
+                            <th style="text-align: center">Explanation</th>
+                          </tr>
+                          <tr>
+                            <td><b>(i)&nbsp;&nbsp; Direct Conversion</b></td>
+                            <td>- <b>replace</b> old system with new system</td>
+                          </tr>
+                          <tr>
+                            <td><b>(ii)&nbsp; Parallel Conversion</b></td>
+                            <td>- running <b>old & new</b> system at the <b>same</b> time</td>
+                          </tr>
+                          <tr>
+                            <td><b>(iii) Phased/Gradual Conversion</b></td>
+                            <td>- combining <b>best</b> features of old & new system</td>
+                          </tr>
+                          <tr>
+                            <td><b>(iv) Pilot Conversion</b></td>
+                            <td>- use (i),(ii) or (iii), but only in one pilot site or location</td>
+                          </tr>
+                        </table>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="moreinfo-container">
+              <a href="#select-phase">Select Phases</a>
+            </div>
+          </fieldset>
+
+          <!-- Maintenance Phase -->
+          <fieldset id="maintenance" class="level">
+            <legend>5. Maintenance</legend>
+            <table class="Planning">
+              <tr>
+                <td>Purpose</td>
+                <td>
+                  <ul class="dashed">
+                    <li>To modify the system according to the user's request</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Feasibility<br />可行性研究</td>
+                <td>
+                  <h3 style="margin: 0">4 Steps of Maintenance :</h3>
+                  <ol style="padding-left: 20px">
+                    <li>Maintenance demand (users' request)</li>
+                    <li>Change mapping</li>
+                    <li>Change design</li>
+                    <li>Change implementation</li>
+                  </ol>
+                </td>
+              </tr>
+              <tr>
+                <td>Outcome<br />(Deliverable)</td>
+                <td>- Maintenance Report<br />- System Review Report</td>
+              </tr>
+            </table>
+            <div class="moreinfo-container">
+              <a href="#select-phase">Select Phases</a>
+            </div>
+          </fieldset>
+        </fieldset>
+
+        <!--====  End of SDLC  ====-->
+
+        <!--==============================================================-->
+        <!--|                                                            |-->
+        <!--|         Fundamentals of Relational Database System         |-->
+        <!--|                                                            |-->
+        <!--==============================================================-->
+
+        <hr id="fundamental-DS" />
+        <h2>3. Fundamentals of Relational Database System</h2>
+        <hr class="hr-2" />
+
+        <fieldset>
+          <div class="field-container">
+            <h3>Data Asset :</h3>
+            <ul>
+              <li>
+                refer to a system, application, document, database, or web page that companies use
+                to generate revenues
+              </li>
+            </ul>
+            <hr />
+            <h3>Importance of data asset :</h3>
+            <table class="listing">
+              <tr>
+                <td>For School :</td>
+                <td>
+                  <ul class="dashed">
+                    <li>effective in improving student achievement</li>
+                    <li>identify the student needs</li>
+                    <li>allow school to measure the effectiveness</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>For Hospital :</td>
+                <td>
+                  <ul class="dashed">
+                    <li>to improve patient outcomes</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+            <hr />
+
+            <h3>Types of data operation :<br />Stages of data operation / processing :</h3>
+            <table class="listing data-operation">
+              <tr>
+                <td>1. Data capture</td>
+              </tr>
+              <tr>
+                <td>2.Validation</td>
+                <td>
+                  <ul class="dashed">
+                    <li>ensuring data is captured & recorded correctly</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>3. Sorting</td>
+                <td>
+                  <ul class="dashed">
+                    <li>arranging data</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>4. Classifying</td>
+                <td>
+                  <ul class="dashed">
+                    <li>grouping data</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>5. Calculation</td>
+              </tr>
+              <tr>
+                <td>6. Summarizing</td>
+              </tr>
+              <tr>
+                <td>7. Storing</td>
+                <td>
+                  <ul class="dashed">
+                    <li>hard drive / in cloud</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>8. Retrieving</td>
+              </tr>
+              <tr>
+                <td>9. Reproducing</td>
+                <td>
+                  <ul class="dashed">
+                    <li>duplicating & store another place</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>10. Communicating</td>
+                <td>
+                  <ul class="dashed">
+                    <li>transferring data</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+            <hr />
+
+            <h3>Characteristic of good data :</h3>
+            <ol style="line-height: 2">
+              <li>Accurate</li>
+              <li>Complete</li>
+              <li>Relevant</li>
+              <li>Timely (up-to-date)</li>
+            </ol>
+            <hr />
+
+            <h3>Data Hierarchy :</h3>
+            <ul style="line-height: 2">
+              <li>refer to the <b>systematic</b> organization of data</li>
+              <li>
+                data organized as <b>bit</b> as the lowest to <b>database</b> the highest level
+              </li>
+              <li><b>more item</b> in data at a <b>higher</b> level</li>
+            </ul>
+            <img src="assets/data-hierarchy.png" alt="" style="width: 580px; margin: 0" />
+            <hr />
+
+            <h3>Database :</h3>
+            <ul style="line-height: 2">
+              <li>is an organized collection of data</li>
+              <li>independent of application programs</li>
+            </ul>
+            <h3>Database System :</h3>
+            <ul>
+              <li>
+                is a set of procedures and rules applied in order to collect a database effectively,
+                timely and accurately
+              </li>
+            </ul>
+            <hr />
+
+            <h3 style="margin-bottom: 20px">Database Management System [DBMS] :</h3>
+            <ul class="dashed">
+              <li>
+                is a software designed to <b>store, retrieve, define, and manage</b> data in a
+                database
+              </li>
+            </ul>
+            <table class="dbms">
+              <tr>
+                <th>Component</th>
+                <th>Primary Task</th>
+              </tr>
+              <tr>
+                <td>
+                  <ul class="dashed">
+                    <li>Data</li>
+                    <li>Hardware</li>
+                    <li>Software</li>
+                    <li>People</li>
+                    <li>Procedure</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="dashed">
+                    <li>Database development</li>
+                    <li>Database interrogation</li>
+                    <li>Database maintenance</li>
+                    <li>Application development</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+
+            <h3>
+              <span style="color: orangered">&#9733;&#9733;&#9733;</span> Important components /
+              features :
+            </h3>
+            <table class="listing">
+              <tr>
+                <td><b>DDL</b> (Data Definition Language)</td>
+                <td>
+                  <ul class="dashed">
+                    <li>define all data that to be stored in database</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><b>DD</b> (Data Dictionary)</td>
+                <td>
+                  <ul class="dashed">
+                    <li>describe logical structure of database</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><b>DML</b> (Data Manipulation Language)</td>
+                <td>
+                  <ul class="dashed">
+                    <li>manipulate information in database</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+
+            <h3>DBMS vs File-based System :</h3>
+            <div style="display: flex">
+              <ul style="line-height: 2">
+                <li>Data manipulation</li>
+                <li>Data consistency</li>
+                <li>Data redundancy</li>
+                <li>Data security</li>
+              </ul>
+              <ul style="list-style: none; line-height: 2">
+                <li>[easy | hard]</li>
+                <li>[high | low]</li>
+                <li>[less | more]</li>
+                <li>[high | low]</li>
+              </ul>
+            </div>
+            <h3>Data Integrity</h3>
+            <ul style="line-height: 2">
+              <li>is the overall <b>completeness, accuracy and consistency</b> of data</li>
+            </ul>
+          </div>
+        </fieldset>
+
+        <!--====  End of Fundamentals of Relational Database System  ====-->
+
+        <!--===================================-->
+        <!--|                                 |-->
+        <!--|         Database System         |-->
+        <!--|                                 |-->
+        <!--===================================-->
+
+        <hr id="DS-plan-design-admin" />
+        <h2>4. Database Systems Planning, Design, and Administration</h2>
+        <hr class="hr-2" />
+
+        <!-- Data -->
+        <fieldset style="padding-bottom: 30px">
+          <legend>Data Problems</legend>
+          <table class="data-problems">
+            <tr>
+              <td>Data Redundancy</td>
+              <td>
+                <ul class="dashed">
+                  <li>
+                    is the same piece of data exist in multiple places which causes redundant data
+                  </li>
+                  <li>will lead to data inconsistency when doing data update</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Data Inconsistency</td>
+              <td>
+                <ul class="dashed">
+                  <li>same piece of data with different format stored in different table</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Data Dependence</td>
+              <td>
+                <ul class="dashed">
+                  <li>helps to keep data separated from all programs</li>
+                  <li>
+                    the immunity of user applications to changes made in the definition &
+                    organization of data
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Data Abstraction</td>
+              <td>
+                <ul class="dashed">
+                  <li>simplify particular body of data representation of the whole</li>
+                  <li>make it less complex</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <!-- Data Anomalies -->
+        <fieldset>
+          <legend>Data Anomalies</legend>
+          <table class="data-anomalies">
+            <tr>
+              <td><b>Insertion</b></td>
+              <td>
+                <ul class="dashed">
+                  <li>
+                    is the inability to <b>add data</b> to the database due to absence of other data
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><b>Update</b></td>
+              <td>
+                <ul class="dashed">
+                  <li>
+                    is a data inconsistency that results from data redundancy and a partial update
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><b>Deletion</b></td>
+              <td>
+                <ul class="dashed">
+                  <li>loss of data that is <b>not intended</b> to be removed</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <div class="moreinfo-container">
+            <a
+              href="https://databasemanagement.fandom.com/wiki/Category:Data_Anomalies"
+              target="_blank"
+              >More Info</a
+            >
+          </div>
+        </fieldset>
+
+        <!-- Data Modelling -->
+        <fieldset style="padding-bottom: 30px">
+          <legend>Data Modelling</legend>
+
+          <b>Process Model Representation </b><span style="color: dimgray">[In Analysis Phase]</span
+          ><br />
+          <b>Data Modelling </b><span style="color: dimgray">[Here]</span>
+
+          <table class="data-modelling">
+            <tr>
+              <td>Conceptual Data<br />Model Representation</td>
+              <td>
+                <ul class="dashed">
+                  <li>
+                    <b>DFD</b> (Data Flow Diagram)
+                    <span style="color: dimgray">[we use: Gane-Sarson]</span>
+                  </li>
+                  <li><b>ERD</b> (Entity Relational Diagram)</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Logical Data<br />Model Representation</td>
+              <td>
+                <ul style="list-style: none; padding: 0; margin: 0">
+                  <li>- Pseudocode</li>
+                  <li>
+                    <a href="assets/sample-decision-tree.png" target="_blank">- Decision Tree</a>
+                  </li>
+                  <li class="sample-decision-tree">
+                    <a
+                      href="https://www.w3computing.com/systemsanalysis/decision-table-example#t46"
+                      target="_blank"
+                      >- Decision Table</a
+                    >
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <!-- Normalization -->
+        <fieldset>
+          <legend>Normalization</legend>
+          <div style="margin: 10px 0 20px 25px; line-height: 2">
+            <b>1NF</b> - Contain only <b>single valued attributes</b><br />
+            <b>2NF</b> - must fulfill 1NF & without <b>PD (Partial Dependency)</b><br />
+            <b>3NF</b> - must fulfill 2NF & without <b>TD (Transitive Dependency)</b>
+          </div>
+          <div style="margin: 10px 0 20px 25px; line-height: 2">
+            <h3>
+              <span style="color: orangered">&#9733;&#9733;&#9733;</span> Why use Normalization :
+            </h3>
+            - eliminate data redundancy<br />- ensuring data dependency
+          </div>
+          <div class="moreinfo-container">
+            <a href="https://youtu.be/J-drts33N8g" target="_blank">More Info</a>
+          </div>
+        </fieldset>
+
+        <!--====  End of Database Systems  ====-->
+
+        <!--==================================-->
+        <!--|                                |-->
+        <!--|         Query Language         |-->
+        <!--|                                |-->
+        <!--==================================-->
+
+        <hr id="sql" />
+        <h2>5. Structured Query Language (SQL)</h2>
+        <hr class="hr-2" />
+
+        <fieldset>
+          <legend>Few important code in SQL to master</legend>
+          <div class="field-container">
+            <!-- <div class="code-section"> -->
+
+            <div class="sql-list">
+              <ul>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_create_db.asp" target="_blank"
+                    >CREATE DATABASE</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_create_table.asp" target="_blank"
+                    >CREATE TABLE</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_alter.asp" target="_blank"
+                    >ALTER TABLE</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_alter.asp" target="_blank"
+                    >ALTER COLUMN</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_unique.asp" target="_blank">UNIQUE</a>
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_primarykey.asp" target="_blank"
+                    >PRIMARY KEY</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_update.asp" target="_blank">UPDATE</a>
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_drop_table.asp" target="_blank"
+                    >DROP TABLE</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_drop_table.asp" target="_blank"
+                    >DROP COLUMN</a
+                  >
+                </li>
+              </ul>
+              <ul style="list-style: none">
+                <li>
+                  <a
+                    href="https://www.w3schools.com/sql/sql_ref_create_database.asp"
+                    target="_blank"
+                    >Reference</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_ref_create_table.asp" target="_blank"
+                    >Reference</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_ref_alter_table.asp" target="_blank"
+                    >Reference</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_ref_alter_column.asp" target="_blank"
+                    >Reference</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_ref_unique.asp" target="_blank"
+                    >Reference</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_ref_primary_key.asp" target="_blank"
+                    >Reference</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_ref_update.asp" target="_blank"
+                    >Reference</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_ref_drop_table.asp" target="_blank"
+                    >Reference</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_ref_drop_column.asp" target="_blank"
+                    >Reference</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <hr />
+
+            <div class="sql-list">
+              <ul>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_select.asp" target="_blank">SELECT</a>
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_distinct.asp" target="_blank"
+                    >SELECT DISTINCT</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_delete.asp" target="_blank"
+                    >DELETE FROM</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_insert.asp" target="_blank"
+                    >INSERT INTO...VALUES</a
+                  >
+                </li>
+              </ul>
+              <ul style="list-style: none">
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_ref_select.asp" target="_blank"
+                    >Reference</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.w3schools.com/sql/sql_ref_select_distinct.asp"
+                    target="_blank"
+                    >Reference</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_ref_delete.asp" target="_blank"
+                    >Reference</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_ref_insert_into.asp" target="_blank"
+                    >Reference</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <hr />
+
+            <div class="sql-list">
+              <ul>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_like.asp" target="_blank"
+                    >LIKE | NOT LIKE</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_where.asp" target="_blank">WHERE</a>
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_null_values.asp" target="_blank"
+                    >IS NULL</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_notnull.asp" target="_blank"
+                    >IS NOT NULL</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_orderby.asp" target="_blank"
+                    >ORDER BY</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_groupby.asp" target="_blank"
+                    >GROUP BY</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_ref_add.asp" target="_blank">ADD</a>
+                </li>
+              </ul>
+              <ul style="list-style: none">
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_ref_like.asp" target="_blank"
+                    >Reference</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_ref_where.asp" target="_blank"
+                    >Reference</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_ref_is_null.asp" target="_blank"
+                    >Reference</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_ref_is_not_null.asp" target="_blank"
+                    >Reference</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_ref_order_by.asp" target="_blank"
+                    >Reference</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_ref_group_by.asp" target="_blank"
+                    >Reference</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/sql/sql_ref_add.asp" target="_blank"
+                    >Reference</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- </div> -->
+          <div class="moreinfo-container" style="display: flex; flex-direction: row">
+            <div style="display: flex; flex-direction: column">
+              <a href=" https://www.w3schools.com/sql/sql_datatypes.asp" target="_blank"
+                >Data Type</a
+              >
+              <a
+                href="https://www.sqltutorial.org/wp-content/uploads/2016/04/SQL-cheat-sheet.pdf"
+                target="_blank"
+                >Full PDF</a
+              >
+            </div>
+            <div style="display: flex; flex-direction: column; margin-left: 20px">
+              <a href=" https://www.w3schools.com/sql/sql_exercises.asp" target="_blank"
+                >Exercise</a
+              >
+              <a href="https://www.w3schools.com/sql/sql_quiz.asp" target="_blank">Quiz</a>
+            </div>
+          </div>
+        </fieldset>
+
+        <!--====  End of Query Language  ====-->
+      </div>
+      <!-- grow-flex -->
+    </div>
+    <!-- container -->
+    <a class="top" href="#top"
+      ><button class="gotop">^<br />Top</button></a
+    >
+  </body>
+</html>
